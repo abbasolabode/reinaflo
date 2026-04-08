@@ -70,7 +70,7 @@ export default function Header() {
           }`}
       >
         <div className="lg:hidden flex items-center justify-between px-4 py-4">
-          <Link to="/" className="font-medium text-2xl text-black">
+          <Link to="/" className="font-medium  text-white cursor-pointer text-2xl ">
             ReinaFlo
           </Link>
 
@@ -78,14 +78,14 @@ export default function Header() {
             {!isOpen ? (
               <button
                 onClick={() => setIsOpen(true)}
-                className="w-12 text-white  h-12 text-2xl flex justify-center items-center"
+                className="w-12 text-white cursor-pointer  h-12 text-2xl flex justify-center items-center"
               >
                 <CiMenuBurger />
               </button>
             ) : (
               <button
                 onClick={onClose}
-                className="w-12 h-12 flex justify-center text-2xl items-center"
+                className="w-12 h-12 flex cursor-pointer justify-center text-2xl items-center"
               >
                 <IoMdClose />
               </button>
@@ -96,7 +96,7 @@ export default function Header() {
         {/* Desktop screen */}
         <div className="hidden lg:flex w-full h-20 lg:px-6">
           <div className="lg:flex lg:justify-between w-full lg:px-5 items-center space-x-12 ">
-            <Link to="/" className="font-medium text-2xl text-black">
+            <Link to="/" className="font-medium cursor-pointer text-2xl text-black">
               ReinaFlo
             </Link>
 
@@ -106,7 +106,7 @@ export default function Header() {
                 {navLinks.map(item => (
                   <li key={item.id}>
                     <Link
-                      className="relative text-gray-900 group text-base font-light tracking-wide transition-colors duration-500 hover:text-white"
+                      className="relative cursor-pointer text-white group text-base font-light tracking-wide transition-colors duration-500 hover:text-white"
                       to={item.path}
                     >
                       {item.link}
@@ -126,7 +126,7 @@ export default function Header() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-linear-to-br from-blue-950/90 via-blue-900/90 to-blue-800/90 backdrop-blur-md z-40"
+              className="fixed inset-0 bg-black z-40"
             />
 
             <motion.nav
@@ -143,13 +143,13 @@ export default function Header() {
                     <li>
                       <Link
                         onClick={onClose}
-                        className="text-[20px] text-gray-800 font-medium"
+                        className="text-[20px] text-white font-medium"
                         to={link.path}
                       >
                         {link.link}
                       </Link>
                     </li>
-                    <hr className="text-gray-400/50 mt-2" />
+                    <hr className="text-white mt-2" />
                   </motion.div>
                 ))}
               </ul>

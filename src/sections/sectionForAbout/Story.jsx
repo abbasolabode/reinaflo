@@ -108,9 +108,9 @@ export default function Story() {
                 </div>
 
 
-                <div className="border rounded-md text-white pb-4 flex flex-col items-center justify-start space-y-3 px-3 pt-6 transition-all duration-300 delay-1700 opacity-100 translate-y-0 bg-linear-to-r from-blue-800 to-blue-800 ">
+                <div className="border rounded-md text-white pb-4 flex flex-col items-center justify-start space-y-3 px-3 pt-6 transition-all duration-300 delay-1700 opacity-100 translate-y-0 bg-black ">
                     <h3 className="text-lg font-semibold w-full ">Ready to Join Our Family?</h3>
-                    <p className="text-blue-100 font-medium w-full">
+                    <p className="font-medium w-full">
                         Connect with us to explore pathways into elite performance, leadership, and human transformation.
                     </p>
                     <div className="w-full flex items-center justify-start">
@@ -121,9 +121,9 @@ export default function Story() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    <hr className=" bg-linear-to-r from-blue-700 to-blue-800 h-px transition-all duration-300 delay-1700 w-8" />
-                    <GoDotFill className="w-2 h-2 bg-blue-700 rounded-full" />
-                    <hr className=" bg-linear-to-r from-blue-700 to-blue-800 h-px transition-all duration-300 delay-1700 w-12" />
+                    <hr className=" bg-black h-px transition-all duration-300 delay-1700 w-8" />
+                    <GoDotFill className="w-2 h-2 bg-black rounded-full" />
+                    <hr className=" bg-black h-px transition-all duration-300 delay-1700 w-12" />
                 </div>
             </section>
 
