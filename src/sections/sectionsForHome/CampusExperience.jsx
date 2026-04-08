@@ -1,34 +1,109 @@
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiEye } from "react-icons/fi";
+import { motion } from "framer-motion";
+
+// animation variants
+const buttonVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.8, 0.25, 1],
+    },
+  },
+};
 
 export default function CampusExperience() {
   return (
     <div className="space-y-8 text-center min-h-[317.333px] lg:h-[233.33px] py-4 md:-mt-20 lg:-mt-25">
-        <div className="space-y-4 flex flex-col px-5 py-4">
-            <h3 className="text-2xl font-light text-slate-900 lg:text-3xl">
-              Experience Elite Leadership
-            </h3>
+      <div className="space-y-4 flex flex-col px-5 py-4">
 
-            <p className="text-slate-800 mx-auto max-w-2xl">
-              Discover how Olympic-level performance principles drive leadership, resilience, and transformation across organizations and individuals
-            </p>
+        <h3 className="text-2xl font-light text-slate-900 lg:text-3xl">
+          Experience Elite Leadership
+        </h3>
 
-            <div className="min-[780px]:flex-row flex flex-col items-center justify-center gap-4">
-                <Link className="group inline-flex items-center px-6 py-3  bg-linear-to-r from-blue-800 to bg-emerald-800 font-medium rounded-md shadow-md text-white gap-2 hover:shadow-xl transition-shadow duration-300">
-                  Explore Impact <span>< GoArrowUpRight /></span>
+        <p className="text-slate-800 mx-auto max-w-2xl">
+          Discover how Olympic-level performance principles drive leadership, resilience, and transformation across organizations and individuals
+        </p>
+
+        {/* 🔥 Animated Buttons */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={{ staggerChildren: 0.2 }}
+          className="min-[780px]:flex-row flex flex-col items-center justify-center gap-4"
+        >
+
+          {/* Button 1 */}
+          <motion.div variants={buttonVariants}>
+            <motion.div
+              whileHover={{ scale: 1.05, y: -3 }}
+              whileTap={{ scale: 0.96 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <motion.div
+                initial={{ backgroundColor: "#000", color: "#fff" }}
+                whileHover={{ backgroundColor: "#fff", color: "#000" }}
+                transition={{ duration: 0.4 }}
+                className="rounded-md"
+              >
+                <Link className="group inline-flex items-center px-6 py-3 font-medium shadow-md gap-2 w-full h-full">
+
+                  Explore Impact
+
+                  <motion.span
+                    initial={{ x: 0 }}
+                    whileHover={{ x: 6 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <GoArrowUpRight />
+                  </motion.span>
+
                 </Link>
+              </motion.div>
+            </motion.div>
+          </motion.div>
 
-                <Link className="group inline-flex items-center px-6 py-3 border gap-2 border-slate-300 text-slate-700 font-medium rounded-md hover:border-slate-400 hover:slate-50 transition-colors duration-300">
-                  <span><FiEye size={20}/></span>
+          {/* Button 2 */}
+          <motion.div variants={buttonVariants}>
+            <motion.div
+              whileHover={{ scale: 1.05, y: -3 }}
+              whileTap={{ scale: 0.96 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <motion.div
+                initial={{ backgroundColor: "#000", color: "#fff", borderColor: "#fff" }}
+                whileHover={{ backgroundColor: "#fff", color: "#000", borderColor: "#000" }}
+                transition={{ duration: 0.4 }}
+                className="rounded-md border"
+              >
+                <Link className="group inline-flex items-center px-6 py-3 gap-2 font-medium w-full h-full">
+
+                  <motion.span
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.2 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <FiEye size={20} />
+                  </motion.span>
+
                   View Approach
-                </Link>
-            </div>
 
-            <p className="text-sm text-slate-50 ">
-              Discover the methodology behind high performance and leadership transformation
-            </p>
-        </div>
+                </Link>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+
+        </motion.div>
+
+        <p className="text-sm text-slate-50 ">
+          Discover the methodology behind high performance and leadership transformation
+        </p>
+
+      </div>
     </div>
-  )
+  );
 }

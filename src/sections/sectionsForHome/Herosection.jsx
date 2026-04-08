@@ -92,7 +92,7 @@ export default function Herosection() {
             <div className="flex w-full flex-col uppercase items-center gap-6">
 
               <motion.div variants={button} className="w-full">
-                <Link className="w-full bg-blue-600 text-white font-semibold min-h-14 flex justify-center items-center">
+                <Link className="w-full bg-black text-white font-semibold min-h-14 flex justify-center items-center">
                   Explore ReinaFlor
                 </Link>
               </motion.div>

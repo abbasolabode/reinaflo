@@ -16,42 +16,42 @@ const socialLinks = [
 ];
 
 const navigateLinks = [
-  { id: 1, path: "/", icon: <BsDot className="text-blue-500" />, text: "Home" },
-  { id: 2, path: "/about", icon: <BsDot className="text-blue-500" />, text: "About" },
-  { id: 3, path: "/services", icon: <BsDot className="text-blue-500" />, text: "Services" },
-  { id: 4, path: "/gallery", icon: <BsDot className="text-blue-500" />, text: "Gallery" },
-  { id: 5, path: "/contact", icon: <BsDot className="text-blue-500" />, text: "Contact" },
-  { id: 6, path: "/login", icon: <BsDot className="text-blue-500" />, text: "Login" },
-  { id: 7, path: "/podcast", icon: <BsDot className="text-blue-500" />, text: "Podcast" },
+  { id: 1, path: "/", icon: <BsDot className="text-white" />, text: "Home" },
+  { id: 2, path: "/about", icon: <BsDot className="text-white" />, text: "About" },
+  { id: 3, path: "/services", icon: <BsDot className="text-white" />, text: "Services" },
+  { id: 4, path: "/gallery", icon: <BsDot className="text-white" />, text: "Gallery" },
+  { id: 5, path: "/contact", icon: <BsDot className="text-white" />, text: "Contact" },
+  { id: 6, path: "/login", icon: <BsDot className="text-white" />, text: "Login" },
+  { id: 7, path: "/podcast", icon: <BsDot className="text-white" />, text: "Podcast" },
 ];
 
 const learningProgram = [
-  { id: 1, path: "", icon: <BsDot className="text-blue-500" />, text: "Primary Education" },
-  { id: 2, path: "", icon: <BsDot className="text-blue-500" />, text: "Secondary Education" },
-  { id: 3, path: "", icon: <BsDot className="text-blue-500" />, text: "Science & Technology" },
-  { id: 4, path: "", icon: <BsDot className="text-blue-500" />, text: "Art & Humanities" },
-  { id: 5, path: "", icon: <BsDot className="text-blue-500" />, text: "Science & Technology" },
-  { id: 6, path: "", icon: <BsDot className="text-blue-500" />, text: "Sports & Recreation" },
-  { id: 7, path: "", icon: <BsDot className="text-blue-500" />, text: "Extracurricular Activities" },
+  { id: 1, path: "", icon: <BsDot className="text-white" />, text: "Primary Education" },
+  { id: 2, path: "", icon: <BsDot className="text-white" />, text: "Secondary Education" },
+  { id: 3, path: "", icon: <BsDot className="text-white" />, text: "Science & Technology" },
+  { id: 4, path: "", icon: <BsDot className="text-white" />, text: "Art & Humanities" },
+  { id: 5, path: "", icon: <BsDot className="text-white" />, text: "Science & Technology" },
+  { id: 6, path: "", icon: <BsDot className="text-white" />, text: "Sports & Recreation" },
+  { id: 7, path: "", icon: <BsDot className="text-white" />, text: "Extracurricular Activities" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="pt-24 min-h-screen w-full bg-blue-900 border overflow-hidden min-[780px]:space-y-14">
+    <footer className="pt-24 min-h-screen w-full bg-black border overflow-hidden min-[780px]:space-y-14">
 
       <div className="px-4 py-6 flex flex-col items-center justify-center space-y-8">
-        <p className="text-sm uppercase tracking-[0.3rem] font-light text-blue-500">
+        <p className="text-sm uppercase tracking-[0.3rem] font-light text-white">
           Excellence in human development
         </p>
 
         <h2 className="text-4xl flex flex-col text-center leading-[0.9] font-light tracking-tight text-white md:text-6xl">
-          <span className="inline-block bg-linear-to-r from-blue-600 via-blue-600 to-blue-600 bg-clip-text text-transparent md:text-6xl">
+          <span className="inline-block bg-white bg-clip-text text-transparent md:text-6xl">
             Join Our
           </span>
           Community
         </h2>
 
-        <hr className="w-32 h-0.5 mx-auto mb-12 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
+        <hr className="w-32 h-0.5 mx-auto mb-12 bg-white" />
 
         <p className=" max-w-2xl leading-relaxed font-light text-center mx-auto text-white/80 md:text-xl">
           Ready to elevate your leadership journey? Experience excellence through performance and human transformation.
@@ -64,15 +64,15 @@ export default function Footer() {
         <section className="space-y-6 flex flex-col gap-6 px-4">
           <div className="flex flex-col justify-center gap-5">
             <div className="flex items-center space-x-3">
-              <hr className="w-8 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
-              <p className="text-xs font-medium tracking-[0.2rem] uppercase text-blue-600">
+              <hr className="w-8 h-0.5 bg-white" />
+              <p className="text-xs font-medium tracking-[0.2rem] uppercase text-white">
                 Our school
               </p>
             </div>
 
             <Link className="text-xl font-light text-">ReinaFlo</Link>
 
-            <hr className="w-14 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
+            <hr className="w-14 h-0.5 bg-white" />
 
             <p className="text-white/70 leading-relaxed font-light min-[780px]:max-w-md">
               Empowering individuals through elite performance principles, resilience, and a commitment to lasting impact.
@@ -95,8 +95,8 @@ export default function Footer() {
         <section className="flex flex-col space-y-6 mt-10 px-4">
           <div className="flex flex-col gap-5">
             <div className="flex items-center space-x-3">
-              <hr className="w-8 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
-              <h4 className="text-xs font-medium text-blue-600 tracking-[0.2rem] uppercase">
+              <hr className="w-8 h-0.5 bg-white" />
+              <h4 className="text-xs font-medium text-white tracking-[0.2rem] uppercase">
                 Academics
               </h4>
             </div>
@@ -105,7 +105,7 @@ export default function Footer() {
               Learning Programs
             </h3>
 
-            <hr className="w-16 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
+            <hr className="w-16 h-0.5 bg-white" />
           </div>
 
           <nav className="space mt-6">
@@ -126,8 +126,8 @@ export default function Footer() {
         <section className="flex flex-col space-y-6 mt-10 px-4">
           <div className="flex flex-col gap-5">
             <div className="flex items-center space-x-3">
-              <hr className="w-8 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
-              <h4 className="text-xs font-medium text-blue-600 tracking-[0.2rem] uppercase">
+              <hr className="w-8 h-0.5 bg-white" />
+              <h4 className="text-xs font-medium text-white tracking-[0.2rem] uppercase">
                 Quick Links
               </h4>
             </div>
@@ -136,7 +136,7 @@ export default function Footer() {
               Navigate
             </h3>
 
-            <hr className="w-16 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
+            <hr className="w-16 h-0.5 bg-white" />
           </div>
 
           <nav className="mt-6">
@@ -157,8 +157,8 @@ export default function Footer() {
         <section className="flex flex-col gap-4 space-y-6 mt-10 px-4 w-full">
           <div className="flex flex-col gap-5">
             <div className="flex items-center space-x-3">
-              <hr className="w-8 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
-              <h4 className="text-xs font-medium text-blue-600 tracking-[0.2rem] uppercase">
+              <hr className="w-8 h-0.5 bg-white " />
+              <h4 className="text-xs font-medium text-white tracking-[0.2rem] uppercase">
                 Get in touch
               </h4>
             </div>
@@ -167,13 +167,13 @@ export default function Footer() {
               Contact Us
             </h3>
 
-            <hr className="w-16 h-0.5 bg-linear-to-r from-blue-800 via-blue-700 to-blue-800" />
+            <hr className="w-16 h-0.5 bg-white" />
           </div>
 
           <ul className="space-y-6">
             <address className="flex items-center space-x-4">
-              <span className="p-2 bg-blue-800/20 border border-blue-700/30 rounded-lg backdrop-blur-sm">
-                <CiLocationOn className="text-blue-500" />
+              <span className="p-2 bg-white rounded-lg backdrop-blur-sm">
+                <CiLocationOn className="text-black" />
               </span>
               <p className="text-white/70 font-light leading-relaxed">
                 Lutsborgsweg 74, 9752 VX Haren Groningen The Netherlands,
@@ -183,8 +183,8 @@ export default function Footer() {
             </address>
 
             <li className="flex items-center space-x-4">
-              <span className="p-2 bg-blue-800/20 border border-blue-700/30 rounded-lg backdrop-blur-sm">
-                <LuPhone className="text-blue-500" />
+              <span className="p-2 bg-white rounded-lg backdrop-blur-sm">
+                <LuPhone className="text-black" />
               </span>
               <p className="text-white/70 font-light leading-relaxed">
                 +234 707 932 3077
@@ -192,8 +192,8 @@ export default function Footer() {
             </li>
 
             <li className="flex items-center space-x-4">
-              <span className="p-2 bg-blue-800/20 border border-blue-700/30 rounded-lg backdrop-blur-sm">
-                <CiMail className="text-blue-500" />
+              <span className="p-2 bg-white rounded-lg backdrop-blur-sm">
+                <CiMail className="text-black" />
               </span>
               <p className="text-white/70 font-light whitespace-nowrap leading-relaxed">
                 Reina-Flor.okori@olympian.org
@@ -202,8 +202,8 @@ export default function Footer() {
           </ul>
 
           <Link
-            className="group font-medium tracking-[0.2rem] rounded relative px-8 py-3 bg-white/20 border-white/80 text-base hover:border-blue-700/50 hover:bg-blue-700/10 transition-all duration-300 overflow-hidden w-full backdrop-blur-sm text-white text-center"
-            to="/apply"
+            className="group font-medium tracking-[0.2rem] rounded relative px-8 py-3 bg-white text-black b text-base transition-all duration-300 overflow-hidden w-full backdrop-blur-sm text-center"
+            to="/contact"
           >
             Apply Now
           </Link>

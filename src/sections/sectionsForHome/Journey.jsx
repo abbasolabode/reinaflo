@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function () {
     return (
-        <div className='flex flex-col w-full items-center md:space-y-14 space-y-8 min-h-102.5 py-20 bg-gradient-to-r from-blue-900 to-gray-800 '>
+        <div className='flex flex-col w-full items-center md:space-y-14 space-y-8 min-h-102.5 py-20 bg-black'>
             
             <div className='flex flex-col space-y-2 text-white'>
                 <h3 className='font-light text-3xl text-center '>

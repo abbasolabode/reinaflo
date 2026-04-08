@@ -65,11 +65,10 @@ export default function Header() {
     <>
       <header
         className={`relative w-full h-20 z-50 transition-all duration-500 sticky top-0 inset-0 ${isScrolled
-            ? "bg-gradient-to-r from-[#5c4200]/80 via-[#ffd700]/70 to-[#3d2b00]/80 backdrop-blur-xl border-b border-yellow-300/50 shadow-[0_8px_50px_rgba(255,215,0,0.35)]"
-            : "bg-gradient-to-r from-[#5c4200]/50 via-[#ffdf4d]/40 to-[#3d2b00]/50 backdrop-blur-lg border-b border-yellow-200/30"
+            ? "bg-gradient-to-r from-black/90 via-zinc-800/80 to-black/90 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_50px_rgba(0,0,0,0.7)]"
+            : "bg-gradient-to-r from-black/60 via-zinc-900/50 to-black/60 backdrop-blur-lg border-b border-white/5"
           }`}
       >
-
         <div className="lg:hidden flex items-center justify-between px-4 py-4">
           <Link to="/" className="font-medium text-2xl text-black">
             ReinaFlo
@@ -79,7 +78,7 @@ export default function Header() {
             {!isOpen ? (
               <button
                 onClick={() => setIsOpen(true)}
-                className="w-12  h-12 text-2xl flex justify-center items-center"
+                className="w-12 text-white  h-12 text-2xl flex justify-center items-center"
               >
                 <CiMenuBurger />
               </button>

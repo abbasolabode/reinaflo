@@ -8,7 +8,7 @@ export default function WelcomeSection() {
             <section className='lg:max-w-120 min-h-screen flex flex-col gap-8 w-full'>
                 <div className="flex items-center gap-3">
                     <hr className="w-12 bg-linear-to-r from-blue-800 h-0.5 to-gray-800" />
-                    <p className="uppercase tracking-wide font-medium text-blue-700">Where knowledge builds excellence</p>
+                    <p className="uppercase tracking-wide font-medium text-black">Where knowledge builds excellence</p>
                 </div>
 
                 <div className="flex flex-col gap-8">
@@ -26,7 +26,7 @@ export default function WelcomeSection() {
                     <p className="text-gray-700 text-lg leading-relaxed">Today, she translates that experience into her work with leaders, organizations, and institutions navigating complex and fast-changing environments.
                     </p>
                 </div>
-                <Link className=" bg-blue-800 px-8 py-4 font-medium hover:bg-blue-700 transition-all duration-700 shadow-lg text-white flex items-center whitespace-nowrap gap-3 w-70">Learn More About ReinaFlor < GoArrowRight size={20} /></Link>
+                <Link className=" bg-black px-8 py-4 font-medium hover:bg-blue-700 transition-all duration-700 shadow-lg text-white flex items-center whitespace-nowrap gap-3 w-70">Learn More About ReinaFlor < GoArrowRight size={20} /></Link>
             </section>
 
             {/* Right container for image */}

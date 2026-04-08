@@ -49,28 +49,28 @@ export default function Cards() {
         <div className="min-h-screen w-full px-4 lg:py-[-2rem]">
             <div className=" lg:grid-cols-4 items-center justify-center flex flex-col space-y-6 md:items-center md:justify-center md:gap-4 md:grid md:grid-cols-2 min-[780px]:min-h-176.5">
                 {cards.map(card => (
-                    <div key={card.id} className="rounded-2xl flex flex-col space-y-6 border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 bg-white min-h-73 p-6">
+                    <div key={card.id} className="rounded-2xl bg-black  flex flex-col space-y-6 border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 text-white min-h-73 p-6">
                         <div className="flex items-start justify-between">
                             <div className=" flex items-center space-x-4">
-                                <div className={`text-white w-12 h-12 flex items-center justify-center rounded-md } ${card.id === 1? "bg-linear-to-r from-blue-800 to-blue-700" : "bg-black/30 text-white"} ${card.id === 2? "bg-linear-to-r from-purple-800 to-purple-700" : "bg-black/30 text-white"} ${card.id === 3? "bg-linear-to-r from-green-800 to-green-700" : "bg-black/30 text-white"} ${card.id === 4? "bg-linear-to-r from-red-800 to-red-700" : "bg-black/30 text-white"}`}>
+                                <div className={` w-12 h-12 flex bg-white text-black items-center justify-center rounded-md `}>
                                   {card.icon}
                                 </div>
                                 <span className="text-slate-400">0{card.id}</span>
                             </div>
 
-                            <span className="w-8 h-8 rounded-full border border-slate-200 flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span className="w-8 h-8 rounded-full bg-white border-slate-200 flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 < GoArrowUpRight size={20} />
                             </span>
                         </div>
 
                         <div className="space-y-4">
-                            <h3 className="text-xl font-semibold text-slate-900 group-hover:text-blue-800 transition-colors duration-300">{card.header}</h3>
+                            <h3 className="text-xl font-semibold transition-colors duration-300">{card.header}</h3>
                             <p>{card.parargraph}</p>
 
                             <div className="flex flex-wrap gap-2 pt-2">
-                                <span className="px-3 py-1 bg-blue-800/10 text-blue-800 text-xs font-medium rounded-full">{card.smallText1}</span>
-                                <span className="px-3 py-1 bg-blue-800/10 text-blue-800 text-xs font-medium rounded-full">{card.smallText2}</span>
-                                <span className="px-3 py-1 bg-blue-800/10 text-blue-800 text-xs font-medium rounded-full">{card.smallText3}</span>
+                                <span className="px-3 py-1 text-xs font-medium rounded-full">{card.smallText1}</span>
+                                <span className="px-3 py-1 text-xs font-medium rounded-full">{card.smallText2}</span>
+                                <span className="px-3 py-1 text-xs font-medium rounded-full">{card.smallText3}</span>
                             </div>
                         </div>
 
