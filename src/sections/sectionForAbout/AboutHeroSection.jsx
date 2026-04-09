@@ -1,21 +1,41 @@
-
-
 const bgHeroImage = {
   backgroundImage: "url('./images/reina-flor-okori.webp')",
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
 };
+
 export default function AboutHeroSection() {
   return (
-    <div style={bgHeroImage} className=" px-4 min-h-screen flex flex-col justify-center items-center gap-10 space-y-9 ">
-        <div className="flex border rounded py-5 bg-black flex-col gap-3 items-center justify-center">
-            <h2 className='text-xl font-semibold text-white sm:text-lg md:text-xl lg:text-2xl xl:text-3xl '>Broad Vision. Exceptional Learning. Lasting Impact</h2>
-            <p className='px-3 font-light text-center text-white'>Our mission, both then and now is to provide quality education while upholding the highest standard of integrity, professionalism and student success.</p>
+    <div
+      style={bgHeroImage}
+      className="relative min-h-screen flex items-center justify-center px-6"
+    >
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* CONTENT WRAPPER */}
+      <div className="relative z-10 flex flex-col items-center text-center gap-10 max-w-4xl">
+
+        {/* MAIN TEXT CARD */}
+        <div className="bg-black/70 backdrop-blur-md border border-white/10 rounded-xl px-6 py-8 space-y-4 shadow-xl">
+          <h2 className="text-white font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
+            Broad Vision. Exceptional Learning. Lasting Impact
+          </h2>
+
+          <p className="text-white/80 font-light text-sm sm:text-base leading-relaxed">
+            Our mission, both then and now is to provide quality education while
+            upholding the highest standard of integrity, professionalism and
+            student success.
+          </p>
         </div>
 
-        <h1 className=' w-80 text-center py-3 rounded bg-black font-bold text-4xl justify-center items-center text-white md:text-5xl lg:text-6xl'>About</h1>
-    </div>
-  )
-}
+        {/* HERO TITLE */}
+        <h1 className="text-white font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          About
+        </h1>
 
+      </div>
+    </div>
+  );
+}
