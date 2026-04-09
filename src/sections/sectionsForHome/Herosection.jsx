@@ -59,7 +59,7 @@ export default function Herosection() {
         {/* Left container */}
         <motion.h1
           variants={item}
-          className="font-extralight text-4xl text-white/90 lg:text-8xl leading-none z-0"
+          className="font-extralight text-7xl text-white/90 lg:text-8xl leading-none z-0"
         >
           Reina-Flor <span className="block">Okori</span>
         </motion.h1>

@@ -115,7 +115,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* ✅ MENU BELOW HEADER */}
+      {/*  MENU BELOW HEADER */}
       <AnimatePresence>
         {isOpen && (
           <>
@@ -134,7 +134,7 @@ export default function Header() {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="fixed top-20 left-0 w-full h-[calc(100vh-80px)] p-6 z-[950]"
+              className="fixed lg:hidden top-20 left-0 w-full h-[calc(100vh-80px)] p-6 z-[950]"
             >
               <ul className="flex flex-col gap-10 mt-10 w-full">
                 {navLinks.map((link) => (
