@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 const navLinks = [
   { id: 1, link: "Home", path: "/" },
   { id: 2, link: "About", path: "/about" },
-  { id: 3, link: "Services", path: "/services" },
   { id: 4, link: "Podcast", path: "/podcast" },
   { id: 5, link: "Gallery", path: "/gallery" },
   { id: 5, link: "Contact", path: "/contact" },
@@ -126,7 +125,7 @@ export default function Header() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black z-40"
+              className="fixed inset-0 bg-black z-40 w-full"
             />
 
             <motion.nav
@@ -135,9 +134,9 @@ export default function Header() {
               animate="visible"
               exit="exit"
               aria-label="Mobile navigation"
-              className="fixed top-0 left-0 h-full w-3/4 p-6 z-50"
+              className="fixed top-0 left-0 h-full w-full p-6 z-50 "
             >
-              <ul className="flex flex-col gap-10 mt-20">
+              <ul className="flex flex-col gap-10 mt-20 w-full">
                 {navLinks.map((link) => (
                   <motion.div key={link.id} variants={linkVariants}>
                     <li>
@@ -149,7 +148,7 @@ export default function Header() {
                         {link.link}
                       </Link>
                     </li>
-                    <hr className="text-white mt-2" />
+                    <hr className="text-white mt-2 w-full" />
                   </motion.div>
                 ))}
               </ul>

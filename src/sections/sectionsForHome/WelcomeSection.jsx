@@ -12,7 +12,7 @@ export default function WelcomeSection() {
                 </div>
 
                 <div className="flex flex-col gap-8">
-                    <h2 className="text-4xl max-w-60 font-light leading-12 lg:text-[60px] lg:min-w-[353.32px] lg:leading-relaxed lg:min-h-38.75  "><span className="bg-linear-to-r from-blue-800 to-emerald-800 bg-clip-text leading-tight">Welcome to</span> ReinaFlor</h2>
+                    <h2 className="text-4xl max-w-60 font-light leading-12 lg:text-[60px] lg:min-w-[353.32px] lg:leading-relaxed lg:min-h-38.75  "><span className="bg-linear-to-r from-blue-800 to-emerald-800 bg-clip-text leading-tight">Welcome to</span> Reina-Flor</h2>
                     <hr className="w-55 bg-linear-to-r from-blue-800 h-0.5 to-gray-800" />
                 </div>
                 <h2 className="text-2xl font-light leading-relaxed text-gray-800">Scientia Pro Excellentiae et Ministerio</h2>

@@ -93,7 +93,7 @@ export default function Herosection() {
 
               <motion.div variants={button} className="w-full">
                 <Link className="w-full bg-black text-white font-semibold min-h-14 flex justify-center items-center">
-                  Explore ReinaFlor
+                  Explore Reina-Flor
                 </Link>
               </motion.div>
 

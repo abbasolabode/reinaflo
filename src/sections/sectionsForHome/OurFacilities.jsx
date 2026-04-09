@@ -11,7 +11,7 @@ export default function OurFacilities() {
           <hr className="w-12 h-px bg-linear-to-r from-blue-800 to-emerald-800" />
         </div>
 
-        <h2 className="text-4xl text-slate-900"> Our <span className="bg-gradient-to-r from-blue-800 to-emerald-800 bg-clip-text text-transparent font-medium">Facilities</span></h2>
+        <h2 className="text-4xl text-slate-900"> Our <span className="text-slate-900 font-medium">Facilities</span></h2>
         <p className="text-lg text-center text-slate-800 font-light mx-auto">World-class learning environments designed to inspire excellence and foster holistic development through our 21st-century approach</p>
         <p className="text-lg font-light  p-6 bg-black text-white rounded-2xl mx-auto text-center">"Scientia Pro Excellentiae et Ministerio" - Knowledge for Excellence and Service</p>
 

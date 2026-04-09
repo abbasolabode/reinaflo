@@ -18,7 +18,6 @@ const socialLinks = [
 const navigateLinks = [
   { id: 1, path: "/", icon: <BsDot className="text-white" />, text: "Home" },
   { id: 2, path: "/about", icon: <BsDot className="text-white" />, text: "About" },
-  { id: 3, path: "/services", icon: <BsDot className="text-white" />, text: "Services" },
   { id: 4, path: "/gallery", icon: <BsDot className="text-white" />, text: "Gallery" },
   { id: 5, path: "/contact", icon: <BsDot className="text-white" />, text: "Contact" },
   { id: 6, path: "/login", icon: <BsDot className="text-white" />, text: "Login" },

@@ -5,7 +5,6 @@ import { Toaster } from "react-hot-toast";
 import AppLayouts from "./layouts/AppLayouts";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Service from "./pages/Service";
 import Podcast from "./pages/Podcast";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -34,7 +33,6 @@ export default function App() {
               <Route index element={<Navigate replace to="/home" />} />
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Service />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/podcast" element={<Podcast />} />
               <Route path="/contact" element={<Contact />} />
