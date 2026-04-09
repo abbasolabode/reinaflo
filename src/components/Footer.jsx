@@ -25,13 +25,10 @@ const navigateLinks = [
 ];
 
 const learningProgram = [
-  { id: 1, path: "", icon: <BsDot className="text-white" />, text: "Primary Education" },
-  { id: 2, path: "", icon: <BsDot className="text-white" />, text: "Secondary Education" },
+  { id: 1, path: "", icon: <BsDot className="text-white" />, text: "Science & Technology" },
+  { id: 2, path: "", icon: <BsDot className="text-white" />, text: "Art & Humanities" },
   { id: 3, path: "", icon: <BsDot className="text-white" />, text: "Science & Technology" },
-  { id: 4, path: "", icon: <BsDot className="text-white" />, text: "Art & Humanities" },
-  { id: 5, path: "", icon: <BsDot className="text-white" />, text: "Science & Technology" },
-  { id: 6, path: "", icon: <BsDot className="text-white" />, text: "Sports & Recreation" },
-  { id: 7, path: "", icon: <BsDot className="text-white" />, text: "Extracurricular Activities" },
+  { id: 4, path: "", icon: <BsDot className="text-white" />, text: "Sports & Recreation" },
 ];
 
 export default function Footer() {

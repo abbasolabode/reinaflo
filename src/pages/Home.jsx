@@ -21,7 +21,7 @@ export default function Home() {
       <WelcomeSection />
       <Journey/>
       <Mission />
-      <OurFacilities/>
+    {/*   <OurFacilities/> */}
       <Cards/>
       <CampusExperience/>
     </main>
