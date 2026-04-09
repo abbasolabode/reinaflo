@@ -1,7 +1,8 @@
 import { GoArrowUpRight, GoBook } from "react-icons/go";
 import { IoHomeOutline } from "react-icons/io5";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { PiMicroscopeLight } from "react-icons/pi";
+import { SiMicrostrategy } from "react-icons/si";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { FaConnectdevelop } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const cards = [
@@ -17,7 +18,7 @@ const cards = [
 
     {
         id: 2,
-        icon: <PiMicroscopeLight size={24} />,
+        icon: <SiMicrostrategy size={24} />,
         header: "Performance Strategy",
         parargraph: "Applying Olympic-level discipline and structure to business and leadership",
         smallText1: "High Performance",
@@ -26,7 +27,7 @@ const cards = [
     },
     {
         id: 3,
-        icon: <IoGameControllerOutline size={24} />,
+        icon: <FaConnectdevelop size={24} />,
         header: "Human Development",
         parargraph: "Empowering individuals through resilience, well-being, and transformation",
         smallText1: "Resilience",
@@ -35,7 +36,7 @@ const cards = [
     },
     {
         id: 4,
-        icon: <IoHomeOutline size={24} />,
+        icon: <AiOutlineGlobal size={24} />,
         header: "Global Impact",
         parargraph: "Driving change across organizations, cultures, and leadership ecosystems",
         smallText1: "Organizations",

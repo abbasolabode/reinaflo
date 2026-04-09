@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useIsOpenMenu } from "../hooks/useIsOpenMenu";
 import CampusExperience from "../sections/sectionsForHome/CampusExperience";
 import Cards from "../sections/sectionsForHome/Cards";
@@ -8,8 +9,11 @@ import OurFacilities from "../sections/sectionsForHome/OurFacilities";
 import WelcomeSection from "../sections/sectionsForHome/WelcomeSection";
 
 export default function Home() {
-  const { isOpen } = useIsOpenMenu()
-
+  const { isOpen } = useIsOpenMenu();
+  
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <main className="overflow-hidden">

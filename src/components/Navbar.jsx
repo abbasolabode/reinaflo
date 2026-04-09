@@ -71,7 +71,7 @@ export default function Header() {
       {/* Mobile Header */}
       <div className="lg:hidden flex items-center justify-between px-4 py-4">
         <Link to="/" className="font-medium text-white text-2xl">
-          ReinaFlo
+          Reina-Flo
         </Link>
 
         {!isOpen ? (
@@ -94,8 +94,8 @@ export default function Header() {
       {/* Desktop */}
       <div className="hidden lg:flex w-full h-20 lg:px-6">
         <div className="lg:flex lg:justify-between w-full lg:px-5 items-center space-x-12">
-          <Link to="/" className="font-medium text-2xl text-black">
-            ReinaFlo
+          <Link to="/" className="font-medium text-2xl text-white">
+            Reina-Flo
           </Link>
 
           <nav className="w-135">
