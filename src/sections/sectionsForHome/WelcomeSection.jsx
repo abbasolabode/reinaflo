@@ -69,7 +69,7 @@ export default function WelcomeSection() {
           </p>
         </div>
 
-        {/* ✅ ONLY BUTTON ANIMATION UPDATED */}
+        {/* ONLY BUTTON ANIMATION UPDATED */}
         <motion.div
           variants={buttonVariants}
           initial="hidden"

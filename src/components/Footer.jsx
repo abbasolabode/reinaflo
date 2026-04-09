@@ -7,6 +7,23 @@ import { CiLocationOn } from "react-icons/ci";
 import { LuPhone } from "react-icons/lu";
 import { CiMail } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+// FIX: motion wrapper for Link
+const MotionLink = motion(Link);
+
+// animation variants
+const buttonVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.25, 0.8, 0.25, 1],
+    },
+  },
+};
 
 const socialLinks = [
   { id: 1, icons: <LuFacebook size={22} />, path: "" },
@@ -35,13 +52,14 @@ export default function Footer() {
   return (
     <footer className="pt-24 min-h-screen w-full bg-black border overflow-hidden min-[780px]:space-y-14">
 
+      {/* HEADER */}
       <div className="px-4 py-6 flex flex-col items-center justify-center space-y-8">
         <p className="text-sm uppercase tracking-[0.3rem] font-light text-white">
           Excellence in human development
         </p>
 
         <h2 className="text-4xl flex flex-col text-center leading-[0.9] font-light tracking-tight text-white md:text-6xl">
-          <span className="inline-block bg-white bg-clip-text text-transparent md:text-6xl">
+          <span className="inline-block bg-white bg-clip-text text-transparent">
             Join Our
           </span>
           Community
@@ -49,14 +67,15 @@ export default function Footer() {
 
         <hr className="w-32 h-0.5 mx-auto mb-12 bg-white" />
 
-        <p className=" max-w-2xl leading-relaxed font-light text-center mx-auto text-white/80 md:text-xl">
+        <p className="max-w-2xl leading-relaxed font-light text-center mx-auto text-white/80 md:text-xl">
           Ready to elevate your leadership journey? Experience excellence through performance and human transformation.
         </p>
       </div>
 
+      {/* GRID */}
       <div className="space-y-6 w-full md:grid md:grid-cols-2 md:min-h-128.25 md:items-center lg:grid-cols-4">
 
-        {/* Logo + social links */}
+        {/* SOCIAL */}
         <section className="space-y-6 flex flex-col gap-6 px-4">
           <div className="flex flex-col justify-center gap-5">
             <div className="flex items-center space-x-3">
@@ -66,7 +85,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <Link className="text-xl font-light text-">ReinaFlo</Link>
+            <Link className="text-xl font-light text-white">ReinaFlo</Link>
 
             <hr className="w-14 h-0.5 bg-white" />
 
@@ -79,15 +98,17 @@ export default function Footer() {
             {socialLinks.map(link => (
               <span
                 key={link.id}
-                className="border p-3 bg-white/5 border-white/10 text-white/70 hover:border-blue-700/50 hover:bg-blue-700/50 backdrop-blur-sm transition-all duration-300 group"
+                className="border p-3 bg-white/5 border-white/10 text-white/70 hover:text-black hover:border-black/50 hover:bg-white backdrop-blur-sm transition-all duration-300"
               >
-                <a href={link.path} rel="noopener noreferrer" target="_blank">{link.icons}</a>
+                <a href={link.path} target="_blank" rel="noopener noreferrer">
+                  {link.icons}
+                </a>
               </span>
             ))}
           </div>
         </section>
 
-        {/* Academics +31 6 57105735 */}
+        {/* ACADEMICS */}
         <section className="flex flex-col space-y-6 mt-10 px-4">
           <div className="flex flex-col gap-5">
             <div className="flex items-center space-x-3">
@@ -104,21 +125,19 @@ export default function Footer() {
             <hr className="w-16 h-0.5 bg-white" />
           </div>
 
-          <nav className="space mt-6">
-            <ul className="flex flex-col gap-4">
-              {learningProgram.map(link => (
-                <li key={link.id} className="flex items-center">
-                  {link.icon}
-                  <Link className="text-white/70 text-[14px] font-light">
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <ul className="flex flex-col gap-4 mt-6">
+            {learningProgram.map(link => (
+              <li key={link.id} className="flex items-center gap-2">
+                {link.icon}
+                <Link className="text-white/70 text-[14px] font-light">
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
 
-        {/* Quick Links */}
+        {/* QUICK LINKS */}
         <section className="flex flex-col space-y-6 mt-10 px-4">
           <div className="flex flex-col gap-5">
             <div className="flex items-center space-x-3">
@@ -135,21 +154,19 @@ export default function Footer() {
             <hr className="w-16 h-0.5 bg-white" />
           </div>
 
-          <nav className="mt-6">
-            <ul className="flex flex-col gap-4">
-              {navigateLinks.map(link => (
-                <li key={link.id} className="flex items-center">
-                  {link.icon}
-                  <Link className="text-white/70 text-[14px] font-light">
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <ul className="flex flex-col gap-4 mt-6">
+            {navigateLinks.map(link => (
+              <li key={link.id} className="flex items-center gap-2">
+                {link.icon}
+                <Link className="text-white/70 text-[14px] font-light">
+                  {link.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
 
-        {/* Contact Us */}
+        {/* CONTACT */}
         <section className="flex flex-col gap-4 space-y-6 mt-10 px-4 w-full">
           <div className="flex flex-col gap-5">
             <div className="flex items-center space-x-3">
@@ -168,52 +185,66 @@ export default function Footer() {
 
           <ul className="space-y-6">
             <address className="flex items-center space-x-4">
-              <span className="p-2 bg-white rounded-lg backdrop-blur-sm">
+              <span className="p-2 bg-white rounded-lg">
                 <CiLocationOn className="text-black" />
               </span>
               <p className="text-white/70 font-light leading-relaxed">
-                Lutsborgsweg 74, 9752 VX Haren Groningen The Netherlands,
-                Registered under BTW-id: NL0034763665B41
-
+                Lutsborgsweg 74, Netherlands
               </p>
             </address>
 
             <li className="flex items-center space-x-4">
-              <span className="p-2 bg-white rounded-lg backdrop-blur-sm">
+              <span className="p-2 bg-white rounded-lg">
                 <LuPhone className="text-black" />
               </span>
-              <p className="text-white/70 font-light leading-relaxed">
-                +234 707 932 3077
-              </p>
+              <p className="text-white/70">+234 707 932 3077</p>
             </li>
 
             <li className="flex items-center space-x-4">
-              <span className="p-2 bg-white rounded-lg backdrop-blur-sm">
+              <span className="p-2 bg-white rounded-lg">
                 <CiMail className="text-black" />
               </span>
-              <p className="text-white/70 font-light whitespace-nowrap leading-relaxed">
+              <p className="text-white/70">
                 Reina-Flor.okori@olympian.org
               </p>
             </li>
           </ul>
 
-          <Link
-            className="group font-medium tracking-[0.2rem] rounded relative px-8 py-3 bg-white text-black b text-base transition-all duration-300 overflow-hidden w-full backdrop-blur-sm text-center"
+          {/* ✅ PREMIUM BUTTON */}
+          <MotionLink
             to="/contact"
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover={{
+              scale: 1.06,
+              y: -3,
+              backgroundColor: "#ffffff",
+              color: "#000000",
+              boxShadow: "0px 12px 30px rgba(255,255,255,0.15)",
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            transition={{
+              duration: 0.25,
+              ease: "easeOut",
+            }}
+            className="w-full hover:text-white hover:bg-black text-center px-8 py-3 rounded-md bg-white text-black font-medium tracking-[0.2rem] overflow-hidden"
           >
             Apply Now
-          </Link>
+          </MotionLink>
         </section>
 
+        {/* FOOTER BOTTOM */}
+        <div className="w-full px-4 py-6 flex flex-col gap-5 items-stretch md:col-span-2 lg:col-span-4">
+          <hr className="w-full h-px bg-white/20" />
 
-
-        <div className="w-full  px-4 py-6 flex flex-col gap-5 items-stretch md:col-span-2 lg:col-span-4">
-          <hr className="w-full h-px bg-linear-to-r from-transparent via-blue-700/50 to-transparent" />
-
-          <p className="w-full text-sm text-white/50 text-center font-light">
-            Copyright © 2026 ReinaFlor-Okori. <span>All rights reserved.</span>
+          <p className="text-sm text-white/50 text-center font-light">
+            Copyright © 2026 ReinaFlor-Okori. All rights reserved.
           </p>
         </div>
+
       </div>
     </footer>
   );

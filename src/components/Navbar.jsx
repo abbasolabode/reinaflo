@@ -11,7 +11,8 @@ const navLinks = [
   { id: 4, link: "Podcast", path: "/podcast" },
   { id: 5, link: "Gallery", path: "/gallery" },
   { id: 6, link: "Contact", path: "/contact" },
-  { id: 7, link: "login", path: "/login" }
+  { id: 7, link: "Olympiadiary", path: "/olympiadiary"},
+  { id: 8, link: "login", path: "/login" },
 ];
 
 const navVariants = {

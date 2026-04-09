@@ -80,7 +80,7 @@ export default function CampusExperience() {
                 transition={{ duration: 0.4 }}
                 className="rounded-md border"
               >
-                <Link className="group inline-flex items-center px-6 py-3 gap-2 font-medium w-full h-full">
+                <Link to="/olympiadiary" className="group inline-flex items-center px-6 py-3 gap-2 font-medium w-full h-full">
 
                   <motion.span
                     initial={{ scale: 1 }}
@@ -90,7 +90,7 @@ export default function CampusExperience() {
                     <FiEye size={20} />
                   </motion.span>
 
-                  View Approach
+                  View Past Records
 
                 </Link>
               </motion.div>

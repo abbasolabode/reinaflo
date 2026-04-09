@@ -9,6 +9,8 @@ import Podcast from "./pages/Podcast";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Olympiadiary from "./pages/Olympiadiary";
+
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -37,6 +39,7 @@ export default function App() {
               <Route path="/podcast" element={<Podcast />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/olympiadiary" element={<Olympiadiary />} />
             </Route>
           </Routes>
         </BrowserRouter>
