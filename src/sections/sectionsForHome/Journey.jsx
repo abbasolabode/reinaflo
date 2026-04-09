@@ -12,7 +12,7 @@ export default function () {
             </div>
 
             {/* Timeline / Identity */}
-            <div className='flex flex-col items-center md:flex-row md:gap-20 md:items-center md:justify-center space-y-8 md:space-y-0 md:space-x-8 text-white w-full'>
+            <div className='flex px-4 flex-col items-center md:flex-row md:gap-20 md:items-center md:justify-center space-y-8 md:space-y-0 md:space-x-8 text-white w-full'>
 
                 <div className='flex flex-col items-center space-y-3'>
                     <p className='text-4xl text-center font-light md:text-5xl '>
@@ -27,7 +27,7 @@ export default function () {
                     <p className='text-4xl text-center mx-auto font-light md:text-5xl'>
                         Strategist
                     </p>
-                    <p className='text-lg opacity-90 text-center md:text-left'>
+                    <p className='text-lg opacity-90 text-center '>
                         Leadership & Performance Design
                     </p>
                 </div>
@@ -36,7 +36,7 @@ export default function () {
                     <p className='text-4xl text-center font-light md:text-5xl'>
                         Founder
                     </p>
-                    <p className='text-lg opacity-90 text-center md:text-left'>
+                    <p className='text-lg opacity-90 text-center'>
                         REFORM™ & Beauty of Sport (B.O.S)
                     </p>
                 </div>
