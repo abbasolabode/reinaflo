@@ -1,101 +1,142 @@
-import { useEffect, useState } from "react";
-import ShowPodcasts from "../sections/podcastSection/ShowPodcasts";
+import { FaPlay, FaHeadphones, FaMicrophone } from "react-icons/fa";
 
-export const podcastEpisodes = [
+const podcasts = [
   {
     id: 1,
-    title: "The Future of Creativity",
-    desc: "A deep conversation on innovation, imagination, and human expression.",
-    videoId: "3fumBcKC6RE",
-    thumbnail: "https://img.youtube.com/vi/3fumBcKC6RE/maxresdefault.jpg",
+    title: "Elite Performance Mindset",
+    desc: "Deep dive into building mental strength and discipline at the highest level.",
+    duration: "32 min",
   },
   {
     id: 2,
-    title: "Designing for Tomorrow",
-    desc: "Exploring modern UI/UX thinking and product design principles.",
-    videoId: "LXb3EKWsInQ",
-    thumbnail: "https://img.youtube.com/vi/LXb3EKWsInQ/maxresdefault.jpg",
+    title: "Leadership Under Pressure",
+    desc: "How elite athletes and leaders perform when everything is on the line.",
+    duration: "45 min",
   },
   {
     id: 3,
-    title: "Voices of Innovation",
-    desc: "How creators and engineers are shaping the future of tech.",
-    videoId: "ScMzIvxBSi4",
-    thumbnail: "https://img.youtube.com/vi/ScMzIvxBSi4/maxresdefault.jpg",
-  },
-  {
-    id: 4,
-    title: "Breaking Boundaries",
-    desc: "Stories of resilience and growth.",
-    videoId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-  },
-  {
-    id: 5,
-    title: "The Art of Storytelling",
-    desc: "How storytelling shapes human connection.",
-    videoId: "hY7m5jjJ9mM",
-    thumbnail: "https://img.youtube.com/vi/hY7m5jjJ9mM/maxresdefault.jpg",
+    title: "Human Transformation Stories",
+    desc: "Real stories of resilience, growth, and breakthrough moments.",
+    duration: "28 min",
   },
 ];
 
-export default function Podcast() {
-  const [activeEpisode, setActiveEpisode] = useState(podcastEpisodes[0]);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-
+export default function PodcastSection() {
   return (
-    <section className="min-h-screen bg-linear-to-br from-black via-zinc-900 to-black text-white px-6 py-16 flex justify-center">
+    <section className="w-full bg-white py-20 px-6 lg:px-16">
 
-      <div className="w-full max-w-6xl space-y-14">
-
-        {/* HERO */}
-        <div className="text-center space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-            🎙️ Podcast Studio
-          </h1>
-
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-            Dive into powerful conversations, elite insights, and stories that shape leadership.
-          </p>
-          <p className="text-zinc-300 text-sm md:text-base max-w-3xl mx-auto leading-relaxed border-l border-white/10 pl-4"> We’re thrilled to bring you the insider podcast — <span className="text-white font-medium">OLYMPIANS DIARY</span>. This series celebrates extraordinary women in sports who embody excellence, self-improvement, and wellbeing. </p>
+      {/* HEADER */}
+      <div className="max-w-5xl mx-auto text-center space-y-4 mb-14">
+        <div className="flex items-center justify-center gap-3 text-black/60">
+          <FaHeadphones />
+          <span className="text-sm tracking-widest uppercase">
+            Podcast Series
+          </span>
         </div>
 
-        {/* FEATURED PLAYER */}
-        <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
-          <iframe
-            className="w-full h-125"
-            src={`https://www.youtube.com/embed/${activeEpisode.videoId}`}
-            title={activeEpisode.title}
-            allowFullScreen
-          />
+        <h2 className="text-4xl md:text-5xl font-light text-black">
+          Conversations That Shape Excellence
+        </h2>
 
-          {/* OVERLAY */}
-          <div className="absolute bottom-0 w-full bg-linear-to-t from-black/95 via-black/60 to-transparent p-7">
+        <p className="text-black/60 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          Explore powerful conversations on leadership, performance, and human transformation with world-class insights and real experiences.
+        </p>
+      </div>
 
-            <span className="text-xs tracking-widest uppercase text-blue-400 font-medium">
-              Featured Episode
-            </span>
+      {/* PODCAST GRID */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-            <h2 className="text-2xl md:text-4xl font-bold mt-2">
-              {activeEpisode.title}
-            </h2>
+        {podcasts.map((podcast) => (
+          <div
+            key={podcast.id}
+            className="
+              group border border-black/10 rounded-xl p-6 bg-white
+              transition-all duration-300 ease-out
+              hover:bg-black hover:text-white
+              hover:-translate-y-2 hover:shadow-2xl
+            "
+          >
 
-            <p className="text-zinc-300 text-sm md:text-base mt-2 max-w-xl">
-              {activeEpisode.desc}
+            {/* ICON */}
+            <div
+              className="
+                w-10 h-10 flex items-center justify-center rounded-full
+                bg-black text-white mb-4
+                group-hover:bg-white group-hover:text-black
+                transition-all duration-300
+              "
+            >
+              <FaMicrophone />
+            </div>
+
+            {/* TITLE */}
+            <h3
+              className="
+                text-lg font-semibold text-black mb-2
+                group-hover:text-white transition-colors duration-300
+              "
+            >
+              {podcast.title}
+            </h3>
+
+            {/* DESCRIPTION */}
+            <p
+              className="
+                text-sm text-black/60 leading-relaxed mb-4
+                group-hover:text-white/70 transition-colors duration-300
+              "
+            >
+              {podcast.desc}
             </p>
 
+            {/* FOOTER */}
+            <div
+              className="
+                flex items-center justify-between text-xs text-black/50
+                group-hover:text-white/60 transition-colors duration-300
+              "
+            >
+              <span>{podcast.duration}</span>
+
+              <button
+                className="
+                  flex items-center gap-2 px-3 py-1 rounded-md text-xs
+                  bg-black text-white border border-black
+                  group-hover:bg-white group-hover:text-black
+                  transition-all duration-300
+                "
+              >
+                <FaPlay size={10} />
+                Play
+              </button>
+            </div>
+
           </div>
+        ))}
 
-        </div>
-
-        {/* EPISODES */}
-        <div className="grid gap-5 sm:grid-cols-2">
-          <ShowPodcasts podcastEpisodes={podcastEpisodes} setActiveEpisode={setActiveEpisode} />
-        </div>
       </div>
+
+      {/* CTA SECTION */}
+      <div className="mt-20 max-w-4xl mx-auto bg-black text-white rounded-xl p-10 text-center space-y-4">
+
+        <h3 className="text-2xl md:text-3xl font-light">
+          Want to Be Featured or Collaborate?
+        </h3>
+
+        <p className="text-white/70 text-sm md:text-base">
+          Join conversations that inspire elite thinking and global transformation.
+        </p>
+
+        <button className="
+          mt-4 px-6 py-3 bg-white text-black rounded-md font-semibold
+          hover:bg-black hover:text-white border border-white
+          transition
+        ">
+          Contact Us
+        </button>
+
+      </div>
+
     </section>
   );
 }
