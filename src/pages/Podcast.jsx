@@ -41,7 +41,7 @@ export const podcastEpisodes = [
 
 export default function Podcast() {
   const [activeEpisode, setActiveEpisode] = useState(podcastEpisodes[0]);
-    useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -60,6 +60,7 @@ export default function Podcast() {
           <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             Dive into powerful conversations, elite insights, and stories that shape leadership.
           </p>
+          <p className="text-zinc-300 text-sm md:text-base max-w-3xl mx-auto leading-relaxed border-l border-white/10 pl-4"> We’re thrilled to bring you the insider podcast — <span className="text-white font-medium">OLYMPIANS DIARY</span>. This series celebrates extraordinary women in sports who embody excellence, self-improvement, and wellbeing. </p>
         </div>
 
         {/* FEATURED PLAYER */}
