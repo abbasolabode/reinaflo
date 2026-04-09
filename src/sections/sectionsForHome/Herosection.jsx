@@ -8,7 +8,7 @@ const bgHeroImage = {
   backgroundRepeat: "no-repeat",
 };
 
-// Animation variants (text only)
+// Animation variants 
 const container = {
   hidden: {},
   visible: {
@@ -30,7 +30,7 @@ const item = {
   },
 };
 
-// Button animation (UX feel)
+// Button animation 
 const buttonMotion = {
   rest: {
     scale: 1,
