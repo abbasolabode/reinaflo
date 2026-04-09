@@ -92,16 +92,16 @@ export default function Herosection() {
             <div className="flex w-full flex-col uppercase items-center gap-6">
 
               <motion.div variants={button} className="w-full">
-                <Link className="w-full bg-black text-white font-semibold min-h-14 flex justify-center items-center">
+                <Link to="/about" className="w-full bg-black text-white font-semibold min-h-14 flex justify-center items-center">
                   Explore Reina-Flor
                 </Link>
               </motion.div>
 
-              <motion.div variants={button} className="w-full">
+             {/*  <motion.div variants={button} className="w-full">
                 <Link className="w-full border bg-white/10 backdrop-blur-md border-black/20 text-white font-light w-50 min-h-14 flex justify-center items-center">
-                  Discover facilities
+                  Discover 
                 </Link>
-              </motion.div>
+              </motion.div> */}
 
             </div>
           </motion.div>

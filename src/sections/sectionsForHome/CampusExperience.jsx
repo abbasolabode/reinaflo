@@ -29,7 +29,7 @@ export default function CampusExperience() {
           Discover how Olympic-level performance principles drive leadership, resilience, and transformation across organizations and individuals
         </p>
 
-        {/* 🔥 Animated Buttons */}
+        {/* Buttons */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -50,7 +50,7 @@ export default function CampusExperience() {
                 transition={{ duration: 0.4 }}
                 className="rounded-md"
               >
-                <Link className="group inline-flex items-center px-6 py-3 font-medium shadow-md gap-2 w-full h-full">
+                <Link to="/gallery" className="group inline-flex items-center px-6 py-3 font-medium shadow-md gap-2 w-full h-full">
 
                   Explore Impact
 
@@ -96,12 +96,7 @@ export default function CampusExperience() {
               </motion.div>
             </motion.div>
           </motion.div>
-
         </motion.div>
-
-        <p className="text-sm text-slate-50 ">
-          Discover the methodology behind high performance and leadership transformation
-        </p>
 
       </div>
     </div>

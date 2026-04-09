@@ -10,7 +10,7 @@ export default function Mission() {
                  <p className="leading-relaxed text-xl text-white/90 font-light mx-auto text-center max-w-3xl">To translate Olympic-level principles of discipline, resilience, and performance into practical tools and methodologies that empower leaders, organizations, and institutions to thrive in complex, fast-changing environments.</p>
             </div>
              
-            <Link to="/Services" className="rounded-md whitespace-nowrap px-10 py-4 bg-black backdrop-blur-sm border-white/30 w-58 text-center font-medium transition-all duration-300 text-white   ">Discover Our Programs</Link>
+            <Link to="/podcast" className="rounded-md whitespace-nowrap px-10 py-4 bg-black backdrop-blur-sm border-white/30 w-58 text-center font-medium transition-all duration-300 text-white">Discover Our Podcasts</Link>
         </div>
     )
 }
