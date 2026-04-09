@@ -4,21 +4,21 @@ import { IoIosSend } from "react-icons/io";
 
 export default function ContactSection() {
   return (
-    <div className="w-full min-h-screen bg-white py-20 px-6">
+    <div className="w-full min-h-screen bg-black py-20 px-6">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16">
 
         {/* LEFT SIDE */}
         <div className="space-y-6">
-          <h2 className="text-4xl font-light text-black">
+          <h2 className="text-4xl font-light text-white">
             Send A Message
           </h2>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-medium text-black">
+            <h3 className="text-xl font-medium text-white">
               ReinaFlo Inquiry Form
             </h3>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-white leading-relaxed">
               Connect with us to explore opportunities in leadership, performance, and transformation. Submit your inquiry below and we’ll get back to you shortly.
             </p>
           </div>
@@ -27,16 +27,16 @@ export default function ContactSection() {
           <div className="space-y-6 pt-6 border-t border-gray-200">
 
             <div className="flex items-start gap-4">
-              <span className="text-black text-xl"><CiMail /></span>
+              <span className="text-white text-xl"><CiMail /></span>
               <div>
-                <p className="font-medium text-black">Email Address</p>
-                <p className="text-gray-600">Reina-Flor.okori@olympian.org</p>
+                <p className="font-medium text-white">Email Address</p>
+                <p className="text-white">Reina-Flor.okori@olympian.org</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
-              <span className="text-black text-xl"><CiLocationOn /></span>
-              <address className="not-italic text-gray-600">
+              <span className="text-white text-xl"><CiLocationOn /></span>
+              <address className="not-italic text-white">
                 Lutsborgsweg 74, 9752 VX Haren Groningen, The Netherlands <br />
                 BTW-id: NL0034763665B41
               </address>

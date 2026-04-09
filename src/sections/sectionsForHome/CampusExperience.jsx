@@ -18,7 +18,7 @@ const buttonVariants = {
 
 export default function CampusExperience() {
   return (
-    <div className="space-y-8 text-center min-h-[317.333px] lg:h-[233.33px] py-4 md:-mt-20 lg:-mt-25">
+    <div className="space-y-8 text-center min-h-[317.333px] lg:h-[233.33px] py-4 md:-mt-60 lg:-mt-25">
       <div className="space-y-4 flex flex-col px-5 py-4">
 
         <h3 className="text-2xl font-light text-slate-900 lg:text-3xl">
