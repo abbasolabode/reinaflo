@@ -74,7 +74,7 @@ const cardVariants = {
 
 export default function Cards() {
     return (
-        <div className="min-h-screen w-full px-4 bg-black">
+        <div className="min-h-screen w-full px-4 py-6 bg-black">
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
