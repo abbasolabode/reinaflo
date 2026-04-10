@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const images = [
   {
     id: 1,
@@ -52,6 +54,11 @@ const images = [
 ];
 
 export default function Gallery() {
+    
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
   return (
     <section className="w-full bg-white py-20 px-6 lg:px-16">
 

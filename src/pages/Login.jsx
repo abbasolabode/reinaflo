@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Login() {
-  const [form, setForm] = useState({
-    email: "",
-    password: "",
-  });
+    
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [form, setForm] = useState({ email: "", password: ""});
 
   const handleChange = (e) => {
     setForm((prev) => ({
