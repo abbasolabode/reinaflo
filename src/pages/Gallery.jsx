@@ -42,6 +42,13 @@ const images = [
     title: "Team Strategy",
     desc: "Building winning systems",
   },
+
+   {
+    id: 8,
+    src: "./images/reina-flor-okori-1.webp",
+    title: "Team Strategy",
+    desc: "Building winning systems",
+  },
 ];
 
 export default function Gallery() {
