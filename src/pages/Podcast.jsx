@@ -1,27 +1,34 @@
 import { useRef, useState } from "react";
 import { FaPlay, FaPause, FaHeadphones, FaMicrophone } from "react-icons/fa";
 
-const podcasts = [
+export const podcasts = [
   {
     id: 1,
-    title: "Elite Performance Mindset",
-    desc: "Deep dive into building mental strength and discipline at the highest level.",
-    duration: "32 min",
-    audio: "/audio/podcast1.mp3",
+    title: "Creative Minds Podcast",
+    desc: "A conversation on creativity, discipline, and innovation.",
+    duration: "2:34",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
   },
   {
     id: 2,
-    title: "Leadership Under Pressure",
-    desc: "How elite athletes and leaders perform when everything is on the line.",
-    duration: "45 min",
-    audio: "/audio/podcast2.mp3",
+    title: "Leadership Talks",
+    desc: "Insights on leadership and decision-making under pressure.",
+    duration: "3:12",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
   },
   {
     id: 3,
-    title: "Human Transformation Stories",
-    desc: "Real stories of resilience, growth, and breakthrough moments.",
-    duration: "28 min",
-    audio: "/audio/podcast3.mp3",
+    title: "Growth & Mindset",
+    desc: "Building resilience and developing a strong mindset.",
+    duration: "4:05",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+  },
+  {
+    id: 4,
+    title: "Elite Performance",
+    desc: "How top performers stay consistent and disciplined.",
+    duration: "5:20",
+    audio: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
   },
 ];
 

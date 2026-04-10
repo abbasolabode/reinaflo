@@ -1,37 +1,44 @@
 const images = [
   {
     id: 1,
-    src: "./images/gallery1.jpg",
+    src: "./images/reina-flor-okori-premium-speaker-3.jpg",
     title: "Elite Training Session",
     desc: "High-performance coaching environment",
   },
   {
     id: 2,
-    src: "./images/gallery2.jpg",
+    src: "./images/reina-flor-okori-premium-speakers-4.webp",
     title: "Leadership Workshop",
     desc: "Strategic thinking development",
   },
   {
     id: 3,
-    src: "./images/gallery3.jpg",
+    src:  "./images/reina-flor-okori-premium-speakers-5.webp",
     title: "Athlete Preparation",
     desc: "Focused mental conditioning",
   },
   {
     id: 4,
-    src: "./images/gallery4.jpg",
+    src: "./images/reina-flor-okori-premium-speakers-6.webp",
     title: "Global Seminar",
     desc: "Speaking on human transformation",
   },
   {
     id: 5,
-    src: "./images/gallery5.jpg",
+    src:  "./images/reina-flor-okori-premium-speakers-7.webp",
     title: "Performance Lab",
     desc: "Data-driven elite training",
   },
   {
     id: 6,
-    src: "./images/gallery6.jpg",
+    src: "./images/reina-flor-okori.webp",
+    title: "Team Strategy",
+    desc: "Building winning systems",
+  },
+
+  {
+    id: 7,
+    src: "./images/reina-h1.jpg",
     title: "Team Strategy",
     desc: "Building winning systems",
   },
