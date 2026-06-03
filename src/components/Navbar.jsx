@@ -10,9 +10,9 @@ const navLinks = [
   { id: 2, link: "About", path: "/about" },
   { id: 4, link: "Podcast", path: "/podcast" },
   { id: 5, link: "Gallery", path: "/gallery" },
-  { id: 6, link: "Olympiadiary", path: "/olympiadiary"},
+ /*  { id: 6, link: "Olympiadiary", path: "/olympiadiary"}, */
   { id: 7, link: "Contact", path: "/contact" },
-  { id: 8, link: "login", path: "/login" },
+/*   { id: 8, link: "login", path: "/login" }, */
 ];
 
 const navVariants = {
